@@ -1,0 +1,24 @@
+CusProto DEFINITIONS AUTOMATIC TAGS ::=
+BEGIN
+
+MsgType ::= ENUMERATED {
+  request(0),
+  ack(1),
+  response(2),
+  error(3)
+}
+
+Header ::= SEQUENCE {
+  version INTEGER (0..255),
+  type    MsgType,
+  seq     INTEGER (0..65535),
+  length  INTEGER (0..65535)
+}
+
+Message ::= SEQUENCE {
+  header  Header,
+  payload OCTET STRING,
+  crc16   INTEGER (0..65535)
+}
+
+END
