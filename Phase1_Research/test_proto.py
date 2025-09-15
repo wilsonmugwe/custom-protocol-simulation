@@ -46,3 +46,7 @@ print("\nCRC16: 0x%04X" % crc)
 print("\n=== FULL PACKET (hex) ===")
 print(hex_bytes(packet))
 
+with open("Phase3_Implementation/encodings/hi_proto.bin", "wb") as f:
+    f.write(packet)   # 'data' is your Protobuf encoded packet
+print("Saved: Phase3_Implementation/encodings/hi_proto.bin")
+
