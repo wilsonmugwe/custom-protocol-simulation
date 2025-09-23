@@ -1,0 +1,22 @@
+syntax = "proto3";
+package cusproto.v1;
+
+enum MsgType {
+  REQUEST  = 0;
+  ACK      = 1;
+  RESPONSE = 2;
+  ERROR    = 3;
+}
+
+message Header {
+  uint32 version = 1;
+  MsgType type   = 2;
+  uint32 seq     = 3;
+  uint32 length  = 4;
+}
+
+message Message {
+  Header header = 1;
+  bytes  payload = 2;
+  uint32 crc16  = 3;
+}
