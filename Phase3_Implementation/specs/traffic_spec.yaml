@@ -1,0 +1,14 @@
+
+## `specs/traffic_spec.yaml`
+```yaml
+encoding: proto   # proto | asn1
+version: 1
+dport: 5555
+flows:
+  - handshake: {seq: 1}
+  - request_response: {count: 5, start_seq: 2, req_prefix: "REQ-", ack_prefix: "ACK-"}
+  - error_truncated: {}
+  - error_tampered_tail: {seq: 7, payload: "PAY"}
+  - error_out_of_order: {seqs: [1,99,2]}
+  - request_response: {count: 3, start_seq: 8, req_prefix: "REQ-", ack_prefix: "ACK-"}
+  - goodbye: {seq: 20}

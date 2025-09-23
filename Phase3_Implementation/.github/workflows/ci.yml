@@ -1,0 +1,16 @@
+name: suite-v4.1-ci
+on: [push, pull_request]
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -U pip
+      - run: python -m pip install scapy protobuf asn1tools pyyaml grpcio-tools
+      - run: python -m grpc_tools.protoc -I. --python_out=. cusproto.proto
+      - run: |
+          python custool.py session --enc asn1 --out normal_asn1.pcap --msgs 3
+          python custool.py report --enc asn1 --pcap normal_asn1.pcap --json report.json --csv report.csv --html report.html

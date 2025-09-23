@@ -1,0 +1,196 @@
+[
+  {
+    "frame": 1,
+    "len": 27,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 1,
+      "length": 11
+    },
+    "payload_utf8": "ClientHello",
+    "crc": 40835,
+    "issues": []
+  },
+  {
+    "frame": 2,
+    "len": 30,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 1,
+      "seq": 1,
+      "length": 14
+    },
+    "payload_utf8": "ServerHelloAck",
+    "crc": 52941,
+    "issues": [
+      "SEQ_NON_MONOTONIC:1->1"
+    ]
+  },
+  {
+    "frame": 3,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 2,
+      "length": 5
+    },
+    "payload_utf8": "REQ-0",
+    "crc": 63004,
+    "issues": []
+  },
+  {
+    "frame": 4,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 2,
+      "seq": 2,
+      "length": 5
+    },
+    "payload_utf8": "ACK-0",
+    "crc": 18797,
+    "issues": [
+      "SEQ_NON_MONOTONIC:2->2"
+    ]
+  },
+  {
+    "frame": 5,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 3,
+      "length": 5
+    },
+    "payload_utf8": "REQ-1",
+    "crc": 35192,
+    "issues": []
+  },
+  {
+    "frame": 6,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 2,
+      "seq": 3,
+      "length": 5
+    },
+    "payload_utf8": "ACK-1",
+    "crc": 13833,
+    "issues": [
+      "SEQ_NON_MONOTONIC:3->3"
+    ]
+  },
+  {
+    "frame": 7,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 4,
+      "length": 5
+    },
+    "payload_utf8": "REQ-2",
+    "crc": 42465,
+    "issues": []
+  },
+  {
+    "frame": 8,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 2,
+      "seq": 4,
+      "length": 5
+    },
+    "payload_utf8": "ACK-2",
+    "crc": 6800,
+    "issues": [
+      "SEQ_NON_MONOTONIC:4->4"
+    ]
+  },
+  {
+    "frame": 9,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 5,
+      "length": 5
+    },
+    "payload_utf8": "REQ-3",
+    "crc": 55941,
+    "issues": []
+  },
+  {
+    "frame": 10,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 2,
+      "seq": 5,
+      "length": 5
+    },
+    "payload_utf8": "ACK-3",
+    "crc": 26100,
+    "issues": [
+      "SEQ_NON_MONOTONIC:5->5"
+    ]
+  },
+  {
+    "frame": 11,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 6,
+      "length": 5
+    },
+    "payload_utf8": "REQ-4",
+    "crc": 7085,
+    "issues": []
+  },
+  {
+    "frame": 12,
+    "len": 21,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 2,
+      "seq": 6,
+      "length": 5
+    },
+    "payload_utf8": "ACK-4",
+    "crc": 42204,
+    "issues": [
+      "SEQ_NON_MONOTONIC:6->6"
+    ]
+  },
+  {
+    "frame": 13,
+    "len": 19,
+    "decoded": true,
+    "header": {
+      "version": 1,
+      "type": 0,
+      "seq": 7,
+      "length": 3
+    },
+    "payload_utf8": "BYE",
+    "crc": 38922,
+    "issues": []
+  }
+]
