@@ -1,0 +1,14 @@
+frame,decoded,seq,len,issues,error,payload_utf8
+1,True,1,27,,,ClientHello
+2,True,1,30,SEQ_NON_MONOTONIC:1->1,,ServerHelloAck
+3,True,2,21,,,REQ-0
+4,True,2,21,SEQ_NON_MONOTONIC:2->2,,ACK-0
+5,True,3,21,,,REQ-1
+6,True,3,21,SEQ_NON_MONOTONIC:3->3,,ACK-1
+7,True,4,21,,,REQ-2
+8,True,4,21,SEQ_NON_MONOTONIC:4->4,,ACK-2
+9,True,5,21,,,REQ-3
+10,True,5,21,SEQ_NON_MONOTONIC:5->5,,ACK-3
+11,True,6,21,,,REQ-4
+12,True,6,21,SEQ_NON_MONOTONIC:6->6,,ACK-4
+13,True,7,19,,,BYE

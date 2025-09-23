@@ -1,0 +1,5 @@
+scapy
+protobuf
+asn1tools
+pyyaml
+grpcio-tools
