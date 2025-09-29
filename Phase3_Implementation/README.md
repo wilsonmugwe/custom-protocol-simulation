@@ -1,10 +1,10 @@
 # Custom Protocol Simulation & Wireshark Analysis (v4.1)
 
-This project simulates a custom UDP protocol with two encodings:
+This project simulates a custom UDP protocol with two encodings:  
 - **Protobuf (`proto`)**
 - **ASN.1 (`asn1`)**
 
-It generates PCAP files, analyzes them, and produces structured reports (JSON, CSV, HTML) for deep inspection in Wireshark.
+It generates PCAP files, analyzes them, and produces structured reports (JSON, CSV, HTML) for deep inspection in Wireshark.  
 
 ---
 
