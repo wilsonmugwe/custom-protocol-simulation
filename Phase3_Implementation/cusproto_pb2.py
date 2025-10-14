@@ -96,5 +96,5 @@ Protocol Buffers (Python):
 - Python Generated Code Guide: https://protobuf.dev/reference/python/python-generated/
 
 Versioning & runtime:
-- Protobuf Python runtime versioning notes: https://protobuf.dev/support/cross-version-runtime/
+- Protobuf Python runtime versioning notes: https://developers.google.com/protocol-buffers/docs/pythontutorial
 """
