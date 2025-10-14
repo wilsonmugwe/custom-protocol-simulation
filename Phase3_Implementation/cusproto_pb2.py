@@ -10,46 +10,70 @@
 
 """Generated protocol buffer code."""
 
-# Core protobuf runtime internals
+# ----------------------------------------------------------
+# Imports: core protobuf runtime internals
+# ----------------------------------------------------------
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import runtime_version as _runtime_version
 from google.protobuf import symbol_database as _symbol_database
 from google.protobuf.internal import builder as _builder
 
-# Validate that the runtime version of protobuf matches what this file was generated with
+# ----------------------------------------------------------
+# Runtime version check
+# Ensures the version of google.protobuf you have installed
+# matches the version this file was generated with.
+# ----------------------------------------------------------
 _runtime_version.ValidateProtobufRuntimeVersion(
     _runtime_version.Domain.PUBLIC,
-    6,
-    31,
-    1,
+    6,      # Major
+    31,     # Minor
+    1,      # Patch
     '',
     'cusproto.proto'
 )
 # @@protoc_insertion_point(imports)
 
-# Symbol database used by protobuf to dynamically look up message/enum types
+# ----------------------------------------------------------
+# Symbol database is used internally by protobuf to look up
+# message and enum types at runtime.
+# ----------------------------------------------------------
 _sym_db = _symbol_database.Default()
 
-
-# ------------------------
-# Schema descriptor (serialized)
-# ------------------------
-# This blob encodes the schema defined in cusproto.proto.
+# ----------------------------------------------------------
+# Schema descriptor (serialized binary blob)
+#
+# This encodes the schema defined in cusproto.proto.
 # It defines:
-# - message Header { version, type, seq, length }
-# - message Message { header, payload, crc16 }
-# - enum MsgType { REQUEST, ACK, RESPONSE, ERROR }
+#   - message Header { version, type, seq, length }
+#   - message Message { header, payload, crc16 }
+#   - enum MsgType { REQUEST, ACK, RESPONSE, ERROR }
+#
+# Protobuf runtime reads this blob to dynamically build
+# the Python classes.
+# ----------------------------------------------------------
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(
     b'\n\x0e\x63usproto.proto\x12\x0b\x63usproto.v1\"Z\n\x06Header\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\"\n\x04type\x18\x02 \x01(\x0e\x32\x14.cusproto.v1.MsgType\x12\x0b\n\x03seq\x18\x03 \x01(\r\x12\x0e\n\x06length\x18\x04 \x01(\r\"N\n\x07Message\x12#\n\x06header\x18\x01 \x01(\x0b\x32\x13.cusproto.v1.Header\x12\x0f\n\x07payload\x18\x02 \x01(\x0c\x12\r\n\x05\x63rc16\x18\x03 \x01(\r*8\n\x07MsgType\x12\x0b\n\x07REQUEST\x10\x00\x12\x07\n\x03\x41\x43K\x10\x01\x12\x0c\n\x08RESPONSE\x10\x02\x12\t\n\x05\x45RROR\x10\x03\x62\x06proto3'
 )
 
-# Populate Python classes (Message, Header, MsgType) from the descriptor above
+# ----------------------------------------------------------
+# Dynamically build the Python classes (Message, Header, MsgType)
+# from the serialized schema above.
+#
+# After this call, you can import:
+#   - cusproto_pb2.Header
+#   - cusproto_pb2.Message
+#   - cusproto_pb2.MsgType
+# ----------------------------------------------------------
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'cusproto_pb2', _globals)
 
-# If C++ optimized descriptors are not being used, attach some extra metadata
+# ----------------------------------------------------------
+# If C++ optimized descriptors are not used,
+# attach some extra metadata for introspection.
+# (Not strictly necessary for normal use.)
+# ----------------------------------------------------------
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_MSGTYPE']._serialized_start=203
@@ -60,3 +84,17 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_MESSAGE']._serialized_end=201
 
 # @@protoc_insertion_point(module_scope)
+
+
+# ------------------------
+# References
+# ------------------------
+"""
+Protocol Buffers (Python):
+- Official Python tutorial: https://developers.google.com/protocol-buffers/docs/pythontutorial
+- Language Guide (proto3): https://developers.google.com/protocol-buffers/docs/proto3
+- Python Generated Code Guide: https://protobuf.dev/reference/python/python-generated/
+
+Versioning & runtime:
+- Protobuf Python runtime versioning notes: https://developers.google.com/protocol-buffers/docs/pythontutorial
+"""
